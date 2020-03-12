@@ -1,1 +1,14 @@
 /* файл css сайт о чае*/
+/* font-family: 'Ruslan Display', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pattaya', sans-serif;
+*/
+body{font-family: 'Open Sans', sans-serif;}
+
+#top { 
+    font-family: 'Ruslan Display', cursive;
+    font-size: 3.0rem;
+    text-align: center;}
+
+blockquote {font-family: 'Pattaya', sans-serif;}
+blockquote footer {text-align:right}
