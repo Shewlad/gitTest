@@ -3,12 +3,61 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Pattaya', sans-serif;
 */
-body{font-family: 'Open Sans', sans-serif;}
-
+/* задаем всем эдементам сраницы св-во box-sizing:*/
+html{
+	box-sizing:border-box;
+}
+*, *:after, *:befor {
+	box-sizing: inherit;
+}
+/*--------------------------------*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #d2dc9d;
+	margin:0;
+	padding:0;
+}
+/* заголовок надпись */
 #top { 
     font-family: 'Ruslan Display', cursive;
     font-size: 3.0rem;
-    text-align: center;}
+    text-align: center;
+}
 
-blockquote {font-family: 'Pattaya', sans-serif;}
-blockquote footer {text-align:right}
+header img{
+
+	float:right;
+	width:433px;
+	height:604px;
+}
+
+nav{
+	font-weight: bold;
+	height:100%;
+}
+nav li{
+	display:block;
+}
+
+blockquote {
+	font-family: 'Pattaya', sans-serif;
+	padding: 1em;
+	border:solid 15px  transparent;
+	border-image:url(img/ramka1.webp) 200 50 round ; 
+}
+blockquote p{
+	text-indent: 2em;
+}
+blockquote footer {
+	text-align:right
+}
+
+section{
+	clear:both;
+}
+section>h3 {
+	text-align:center;
+}
+section p{
+	text-indent: 2em;
+}
