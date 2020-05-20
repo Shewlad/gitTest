@@ -34,6 +34,7 @@ header img{
 nav{
 	font-weight: bold;
 	height:100%;
+	
 }
 nav li{
 	display:block;
@@ -58,6 +59,7 @@ section{
 section>h3 {
 	text-align:center;
 }
+/* отступ первой строки абзаца*/
 section p{
 	text-indent: 2em;
 }
