@@ -3,63 +3,128 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Pattaya', sans-serif;
 */
+/* Цвета:
+  background-color: #d2dc9d; // освной цвет фона -- зелёный
+  #563E20 - умбра -- основной цвет контента
+  #fd7923 - кирпичный
+  #f9b271 - темный беж
+  #AEBD38 - мох                      //фон гл. меню
+  #598234 - луг темно-зелеёный       //текст меню
+  #867666 - олово (коричневатый)
+
+  ----------------------------
+
+*/
+
 /* задаем всем эдементам сраницы св-во box-sizing:*/
-html{
-	box-sizing:border-box;
+html {
+  box-sizing: border-box;
 }
-*, *:after, *:befor {
-	box-sizing: inherit;
+*,
+*:after,
+*:befor {
+  box-sizing: inherit;
 }
-/*--------------------------------*/
-body{
-	font-family: 'Open Sans', sans-serif;
-	background-color: #d2dc9d;
-	margin:0;
-	padding:0;
+/*----------------------------------------------*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #d2dc9d;
+  margin: 0;
+  padding: 0;
+  color: #563E20;
 }
+/*ограничить максимальную ширину страницы*/
+main {
+	width: 100%;
+  max-width: 1280px;
+  min-width: 320px;
+	margin: 0 auto;
+}
+
 /* заголовок надпись */
-#top { 
-    font-family: 'Ruslan Display', cursive;
-    font-size: 3.0rem;
-    text-align: center;
+#top {
+  font-family: "Ruslan Display", cursive;
+  font-size: 3rem;
+  text-align: center;
 }
 
-header img{
-
-	float:right;
-	width:433px;
-	height:604px;
+header img {
+  float: right;
+  width: 433px;
+  height: 604px;
 }
 
-nav{
-	font-weight: bold;
-	height:100%;
-	
-}
-nav li{
-	display:block;
-}
+/*-----Главное меню навигации-------*/
+/*создание горизонтального меню*/
+#main_nav li{
+  display: inline-block;
+  }
 
+  #main_nav{
+    margin:0;
+    padding:0;
+    list-style-type: none; /* сброс маркеров пуктов списка*/
+    background-color: #AEBD38;
+  }
+  #main_nav a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 1.5rem;
+    color: #598234;
+  }
+  #main_nav a:link, a:visited{
+    color: #598234;
+    background-color: #AEBD38;
+  }
+  #main_nav a:hover, a:active{
+    color: #f9b271;
+    background-color: olive;
+    border-radius: 20px 5px;
+  }
+/*----------------------------------*/
+/*навигация по выбору вида чая*/
+#nav_tea {
+  font-weight: bold;
+  height: 100%;
+ 
+}
+#nav_tea li {
+  display: block;
+ }
+
+ #nav_tea a{
+color: #598234; 
+text-decoration: none;
+ }
+ #nav_tea a:visited {
+  color: #867666;
+ }
+ #nav_tea a:hover, a:focus {
+  text-decoration: underline ;
+ }
 blockquote {
-	font-family: 'Pattaya', sans-serif;
-	padding: 1em;
-	border:solid 15px  transparent;
-	border-image:url(img/ramka1.webp) 200 50 round ; 
+  font-family: "Pattaya", sans-serif;
+  padding: 1em;
+  border: solid 15px transparent;
+  border-image: url(img/ramka1.webp) 200 50 round;
+  clear: both;
 }
-blockquote p{
-	text-indent: 2em;
+blockquote p {
+  text-indent: 2em;
 }
 blockquote footer {
-	text-align:right
+  text-align: right;
 }
 
-section{
-	clear:both;
+section {
+  clear: both;
 }
-section>h3 {
-	text-align:center;
+section > h3 {
+  text-align: center;
 }
 /* отступ первой строки абзаца*/
-section p{
-	text-indent: 2em;
+section p {
+  text-indent: 2em;
 }
